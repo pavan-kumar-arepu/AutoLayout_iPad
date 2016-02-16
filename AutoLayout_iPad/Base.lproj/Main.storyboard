@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zww-Nc-tos"/>
+                        <viewControllerLayoutGuide type="bottom" id="05b-nc-xHR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Student Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoR-VQ-uic">
+                                <rect key="frame" x="336" y="132" width="97" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Student Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qkp-kg-gsB">
+                                <rect key="frame" x="329" y="185" width="111" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Student Location" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhg-bw-UxO">
+                                <rect key="frame" x="329" y="236" width="115" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Course" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6J-hr-d0e">
+                                <rect key="frame" x="364" y="334" width="51" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Specilization" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vIZ-JJ-cdg">
+                                <rect key="frame" x="347" y="280" width="86" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Haa-EA-RbS">
+                                <rect key="frame" x="329" y="59" width="111" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPi-8k-VTN">
+                                <rect key="frame" x="361" y="428" width="47" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kX-JA-Hv4">
+                                <rect key="frame" x="309" y="376" width="163" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Retrive TextField Values">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sYT-s6-N0x"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLv-3q-ELW">
+                                <rect key="frame" x="111" y="495" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="lpH-oS-kiw"/>
+                                    <constraint firstAttribute="height" constant="128" id="qcW-Pf-XQA"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQd-mQ-1ow">
+                                <rect key="frame" x="418" y="495" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="IA2-ff-5Nl"/>
+                                    <constraint firstAttribute="height" constant="128" id="cwW-p8-Ni9"/>
+                                    <constraint firstAttribute="height" constant="128" id="gJu-di-ETw"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.46572807929999999" green="0.78353958290000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vhg-bw-UxO" firstAttribute="top" secondItem="qkp-kg-gsB" secondAttribute="bottom" constant="34" id="41A-Xl-1na"/>
+                            <constraint firstAttribute="centerX" secondItem="vhg-bw-UxO" secondAttribute="centerX" constant="-2" id="61F-P3-ahz"/>
+                            <constraint firstItem="UoR-VQ-uic" firstAttribute="top" secondItem="Haa-EA-RbS" secondAttribute="bottom" constant="52" id="7De-UT-tIe"/>
+                            <constraint firstItem="qkp-kg-gsB" firstAttribute="top" secondItem="UoR-VQ-uic" secondAttribute="bottom" constant="36" id="Edm-gK-zPj"/>
+                            <constraint firstItem="vIZ-JJ-cdg" firstAttribute="top" secondItem="vhg-bw-UxO" secondAttribute="bottom" constant="27" id="NgG-wZ-l82"/>
+                            <constraint firstAttribute="centerX" secondItem="vIZ-JJ-cdg" secondAttribute="centerX" constant="-5.5" id="QAx-fZ-tCt"/>
+                            <constraint firstAttribute="centerX" secondItem="UoR-VQ-uic" secondAttribute="centerX" id="Rh8-tI-e31"/>
+                            <constraint firstAttribute="centerX" secondItem="Haa-EA-RbS" secondAttribute="centerX" constant="-0.5" id="S1v-vB-Gje"/>
+                            <constraint firstItem="7kX-JA-Hv4" firstAttribute="top" secondItem="A6J-hr-d0e" secondAttribute="bottom" constant="25" id="WtI-Of-GUD"/>
+                            <constraint firstItem="A6J-hr-d0e" firstAttribute="top" secondItem="vIZ-JJ-cdg" secondAttribute="bottom" constant="37" id="YZO-S1-XHn"/>
+                            <constraint firstItem="qQd-mQ-1ow" firstAttribute="top" secondItem="UPi-8k-VTN" secondAttribute="bottom" constant="46" id="adr-Ib-Bl1"/>
+                            <constraint firstItem="UPi-8k-VTN" firstAttribute="top" secondItem="7kX-JA-Hv4" secondAttribute="bottom" constant="22" id="cfV-sZ-QYn"/>
+                            <constraint firstAttribute="centerX" secondItem="qkp-kg-gsB" secondAttribute="centerX" id="guO-SF-MyQ"/>
+                            <constraint firstAttribute="centerX" secondItem="A6J-hr-d0e" secondAttribute="centerX" constant="-5" id="jC9-tm-24A"/>
+                            <constraint firstItem="fLv-3q-ELW" firstAttribute="top" secondItem="UPi-8k-VTN" secondAttribute="bottom" constant="46" id="lra-NH-rMI"/>
+                            <constraint firstAttribute="centerX" secondItem="7kX-JA-Hv4" secondAttribute="centerX" constant="-6" id="m4e-8W-rm4"/>
+                            <constraint firstItem="Haa-EA-RbS" firstAttribute="top" secondItem="zww-Nc-tos" secondAttribute="bottom" constant="39" id="p0g-5D-nN4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qQd-mQ-1ow" secondAttribute="trailing" constant="94" id="p3X-g1-Onb"/>
+                            <constraint firstItem="fLv-3q-ELW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="95" id="tCp-NC-RcU"/>
+                            <constraint firstAttribute="centerX" secondItem="UPi-8k-VTN" secondAttribute="centerX" constant="-0.5" id="wC5-Q9-BT6"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="768" height="1024"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="UPi-8k-VTN" id="z8d-Vo-0tw"/>
+                        <outlet property="sCourse" destination="A6J-hr-d0e" id="inz-KB-ZBr"/>
+                        <outlet property="sLocation" destination="vhg-bw-UxO" id="998-OI-2Sh"/>
+                        <outlet property="sName" destination="UoR-VQ-uic" id="KM9-Rd-8vH"/>
+                        <outlet property="sNumber" destination="qkp-kg-gsB" id="PNE-xT-SEG"/>
+                        <outlet property="sSpecilization" destination="vIZ-JJ-cdg" id="grC-oQ-NnC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="352"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
